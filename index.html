@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Face Detection</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="buttons">
+    <label class="checkbox path">
+      <input type="checkbox" id="btn-box">
+      <svg viewBox="0 0 21 21">
+        <path
+          d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186">
+        </path>
+      </svg>
+      Toggle box
+    </label>
+    <br>
+    <label class="checkbox path">
+      <input type="checkbox" id="btn-face">
+      <svg viewBox="0 0 21 21">
+        <path
+          d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186">
+        </path>
+      </svg>
+      Toggle face
+    </label> 
+    <br>
+    <label class="checkbox path">
+      <input type="checkbox" id="btn-expr">
+      <svg viewBox="0 0 21 21">
+        <path
+          d="M5,10.75 L8.5,14.25 L19.4,2.3 C18.8333333,1.43333333 18.0333333,1 17,1 L4,1 C2.35,1 1,2.35 1,4 L1,17 C1,18.65 2.35,20 4,20 L17,20 C18.65,20 20,18.65 20,17 L20,7.99769186">
+        </path>
+      </svg>
+      Toggle expressions
+    </label>
+
+  </div>
+  <video id="video" width="720" height="560" autoplay muted></video>
+</body>
+
+</html>
